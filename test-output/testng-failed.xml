@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="Email" value="yugi.kotla@gmail"/>
+    <parameter name="Address" value="Vizag"/>
+    <parameter name="FirstName" value="Yugandhar"/>
+    <parameter name="LastName" value="Kotla"/>
+    <parameter name="Age" value="23"/>
+    <parameter name="Password" value="Yugi@123"/>
+    <classes>
+      <class name="test.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="ReportSetup"/>
+          <include name="LoginTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.LoginPageTest -->
+      <class name="test.SignUpPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="ReportSetup"/>
+          <include name="teardown"/>
+          <include name="signupTest"/>
+        </methods>
+      </class> <!-- test.SignUpPageTest -->
+      <class name="test.AfterLoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterLogin"/>
+          <include name="ReportSetup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.AfterLoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
